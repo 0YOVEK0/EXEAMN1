@@ -1,0 +1,24 @@
+Hacer un programa que  calcule la edad del usuario, a partir de su fecha de nacimiento(dia,mes,año)
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int dia, mes, year;
+    cout << "Tomando en cuenta la fecha de la creacion de este programa 09/02/2023" << endl;
+    cout << "Por favor ingrese su fecha de nacimiento DIA,MES,YEAR separa con espacios cada campo : ";
+
+    cin >> dia >> mes >> year;
+
+
+    int edad = 2023 - year;
+
+    if (2 < mes || (2 == mes && 9 < dia)) {
+        edad--;
+    }
+
+    cout << "Su edad es: " << edad << " YEAR" << endl;
+    cout << "BY YOVEK" << endl;
+    return 0;
+}
